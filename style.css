@@ -538,6 +538,7 @@ iframe.map {
     margin-left: -1.5px;
     content: "";
     background-color: #034180;
+    opacity: 0.2;
   }
   .timeline > li {
     position: relative;
