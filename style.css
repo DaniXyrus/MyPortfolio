@@ -1288,3 +1288,42 @@ section .title::after {
         grid-row: unset;
     }
 }
+
+
+.category-head{
+    margin: 20px 0;
+}
+.category-head ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.category-title{
+    flex: 0 0 calc(16.6667% - 10px);
+    display: flex;
+    justify-content:center;
+    background: #e0dbdb;
+    padding: 12px;
+    color: black;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.category-title:hover{
+    background: #034180;
+    color: white;
+}
+.category-title li{
+    padding: 0 10px;
+}
+
+@media (max-width: 420px) {
+    .category-title{
+        display: inline-block;
+        padding: 5px;
+    }
+    .category-title span{
+        display: none;
+    }
+}
