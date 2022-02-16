@@ -1042,23 +1042,39 @@ section .title::after {
 }
 
 .skills-content .right .html::before {
-    width: 90%;
-}
-
-.skills-content .right .css::before {
-    width: 60%;
-}
-
-.skills-content .right .js::before {
-    width: 80%;
-}
-
-.skills-content .right .php::before {
     width: 50%;
 }
 
-.skills-content .right .mysql::before {
+.skills-content .right .java::before {
+    width: 64%;
+}
+
+.skills-content .right .apps::before {
+    width: 74%;
+}
+
+.skills-content .right .css::before {
+    width: 30%;
+}
+
+.skills-content .right .c::before {
+    width: 50%;
+}
+
+.skills-content .right .fire::before {
     width: 70%;
+}
+
+.skills-content .right .git::before {
+    width: 70%;
+}
+
+.skills-content .right .mic::before {
+    width: 70%;
+}
+
+.skills-content .right .mysql::before {
+    width: 40%;
 }
 
 /* responsive media query start */
