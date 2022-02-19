@@ -931,7 +931,7 @@ section .title::after {
 .about .about-content .left img {
     height: 400px;
     width: 400px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 6px;
 }
 
@@ -1345,3 +1345,24 @@ section .title::after {
         padding: 8px 20px 8px 20px;
      }
 }  
+
+.more a {
+    display: block;
+    text-align: center;
+    background: rgb(6, 118, 209);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 2px solid rgb(6, 118, 209);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.more a:hover {
+    color: rgb(6, 118, 209);
+    background: none;
+}
