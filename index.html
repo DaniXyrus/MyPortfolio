@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="img/title.png">
@@ -17,39 +18,14 @@
 
 <body>
     <!--Floating Button-->
-    <span class="chat-icon btnblinkanim"></span>
-    <div class="main-chat-box">
-        <ul class="chatBox">
-            <!--WhatsApp Chat-->
-            <li>
-                <a href="https://api.whatsapp.com/send?phone=60197957166" target="_blank">
-                    <span class="icon-circle">
-                        <img src="img/whatsapp.png" alt="WhatsApp">
-                    </span>
-                    <abbr>WhatsApp</abbr>
-                </a>
-            </li>
-            <!--Facebook Messenger Chat-->
-            <li>
-                <a href="tel:+60197957166" target="_blank">
-                    <span class="icon-circle">
-                        <img src="img/icon-call.png" alt="Call">
-                    </span>
-                    <abbr>Call</abbr>
-                </a>
-            </li>
-            <!--Email Chat-->
-            <li>
-                <a href="mailto:danialamin100@gmail.com" target="_blank">
-                    <span class="icon-circle">
-                        <img src="img/message-closed-envelope.png" alt="Email">
-                    </span>
-                    <abbr>Email</abbr>
-                </a>
-            </li>
-        </ul>
+    <div class="sbuttons">
+        <a href="https://api.whatsapp.com/send?phone=60197957166" target="_blank" class="sbutton whatsapp" tooltip="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+        <a href="tel:+60197957166" target="_blank" class="sbutton call" tooltip="Call"><i class='bx bx-phone-call'></i></a>
+        <a href="mailto:danialamin100@gmail.com" target="_blank" class="sbutton gmail" tooltip="Gmail"><i class='bx bx-mail-send'></i></a>
+        <a target="_blank" class="sbutton mainsbutton" tooltip="Chat"><i class='bx bx-message-dots'></i></a>
     </div>
     <!--End Floating Button-->
+    
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-4 max-vw-100" aria-label="Fourth navbar example">
         <div class="container">
@@ -79,6 +55,7 @@
         </div>
     </nav>
     <!-- End of Navigation -->
+
     <section id="home" class="min-vh-100 bg-dark text-white p-1 p-md-5">
         <div class="container">
             <div class="bg-primary-75 text-center text-md-start header-text p-3 shadow-lg">
@@ -101,6 +78,7 @@
             </div>
         </div>
     </section>
+
     <!-- about section start -->
     <section class="about" id="about">
         <div class="container">
@@ -111,29 +89,21 @@
                 </div>
                 <div class="column right">
                     <div class="text">Muhammad Danial and I'm a <span class="typing-2"></span></div>
-                    <p> Hello, my name is Muhammad Danial. I’m 23 years old. I have a Bachelor Degree in Information System Engineering From UiTM Jasin, Melaka. <br><br>I am currently looking for a challenging position such as Android mobile developer in your reputable company. I would like to work in a professional and active environment where I can apply my skills and other significant talents to be the best performer in the organisation. I am inspired and interested in positivity and a challenging environment.</p>
+                    <p> Hello, my name is Muhammad Danial. I’m 23 years old. I have a Bachelor Degree in Information System Engineering From UiTM Jasin, Melaka. <br><br>I am currently looking for a challenging position such as Android mobile developer, Software Tester or other positions that are relevant to my course in your reputable company. I would like to work in a professional and active environment where I can apply my skills and other significant talents to be the best performer in the organisation. I am inspired and interested in positivity and a challenging environment.</p>
                     <a href="cv/ResumeV1.pdf" download><i class="fa fa-download"></i>&nbsp Download CV</a>
                 </div>
             </div>
         </div>
+
         <!-- skills section start -->
         <div class="skills" id="skills">
             <div class="container">
                 <div class="skills-content">
                     <div class="column left">
                         <div class="text">My creative skills & experiences.</div>
-                        <p>I have acquired the type of hands-on experience needed to keep your operation
-                            running smoothly. I have the ability to adjust to new surroundings and procedures.
-                            I possess a Bachelor In Information System Engineering. I am flexible,
-                            detail-oriented, and can work as part of a group without problems or
-                            independently, whichever benefits the company the most.</p>
-                        <p> I have experience working with and exchanging information with other departments. I am proficient in multi-tasking
-                            and possess strong leadership and interpersonal skills along with excellent
-                            analytical and problem-solving skills. I always handle myself professionally when
-                            dealing with an unusual or emergency situation.</p>
-                        <p>I have a natural ability to manage workloads and oversee daily tasks to
-                            ensure job performances meet or exceed expectations and a real desire to become
-                            a great worker.</p>
+                        <p>I have acquired the type of hands-on experience needed to keep your operation running smoothly. I have the ability to adjust to new surroundings and procedures. I possess a Bachelor In Information System Engineering. I am flexible, detail-oriented, and can work as part of a group without problems or independently, whichever benefits the company the most.</p>
+                        <p> I have experience working with and exchanging information with other departments. I am proficient in multi-tasking and possess strong leadership and interpersonal skills along with excellent analytical and problem-solving skills. I always handle myself professionally when dealing with an unusual or emergency situation.</p>
+                        <p>I have a natural ability to manage workloads and oversee daily tasks to ensure job performances meet or exceed expectations and a real desire to become a great worker.</p>
                     </div>
                     <div class="column right">
                         <div class="bars">
@@ -219,10 +189,7 @@
                             <h4 class="subheading">UiTM Jasin, Melaka</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Joined University on 2019 in Bachelor Degree of Information System Engineering. Total of 7 semester
-                                and got a CGPA of 3.51. There are a lot of knowledge and skill for system development that I learned from class and also while doing Internship
-                                at one of the information system company at Shah Alam, Selangor.
-                            </p>
+                            <p class="text-muted">Joined University on 2019 in Bachelor Degree of Information System Engineering. Total of 7 semester and got a CGPA of 3.51. There are a lot of knowledge and skill for system development that I learned from class and also while doing Internship at one of the information system company at Shah Alam, Selangor. </p>
                         </div>
                     </div>
                 </li>
@@ -234,9 +201,7 @@
                             <h4 class="subheading">Pahang Matriculation College</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Joined Pahang Matriculation College in Accounting for 1 year programme. Total of 2 semester and got a 
-                                CGPA of 3.35. There a few subject that I learned such as Account, Business, Mathematics and Economics. 
-                            </p>
+                            <p class="text-muted">Joined Pahang Matriculation College in Accounting for 1 year programme. Total of 2 semester and got a CGPA of 3.35. There a few subject that I learned such as Account, Business, Mathematics and Economics. </p>
                         </div>
                     </div>
                 </li>
@@ -248,9 +213,7 @@
                             <h4 class="subheading">SMK Sultan Abu Bakar</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Joined this school on 2013 after got straight 'A' in Ujian Pencapaian Sekolah Rendah (UPSR). I have gained my independence slowly throughout secondary school. The importance of being independent is 
-                                being secure with who you are and what you believe in. It is extremely empowering knowing that you are in control of your 
-                                own life and your own choices in secondary school, University and as a adult. </p>
+                            <p class="text-muted">Joined this school on 2013 after got straight 'A' in Ujian Pencapaian Sekolah Rendah (UPSR). I have gained my independence slowly throughout secondary school. The importance of being independent is being secure with who you are and what you believe in. It is extremely empowering knowing that you are in control of your own life and your own choices in secondary school, University and as a adult. </p>
                         </div>
                     </div>
                 </li>
@@ -272,11 +235,7 @@
                             <h4 class="subheading">Lakaran Cinta Sistem Empire (Internship)</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Joined this company on October 2021. Gained a lot of knowledge and experience working on website
-                                and Android mobile application projects. Being assigned as a group leader in some projects. Taking notes on experiences and 
-                                keeping a log of things learned. My task is communicate with clients for requirement gathering, manage domain and hosting for website,
-                                monitor the progress and make sure everyone were doing their part in projects.
-                            </p>
+                            <p class="text-muted">Joined this company on October 2021. Gained a lot of knowledge and experience working on website and Android mobile application projects. Being assigned as a group leader in some projects. Taking notes on experiences and keeping a log of things learned. My task is communicate with clients for requirement gathering, manage domain and hosting for website, monitor the progress and make sure everyone were doing their part in projects. </p>
                         </div>
                     </div>
                 </li>
@@ -284,19 +243,17 @@
         </div>
     </section>
 
-    <!-- about section start -->
+    <!-- projects section start -->
     <section class="projects" id="projects">
         <div class="container">
             <h2 class="title">Projects</h2>
-
             <div class="row">
                 <div class="gallery-filter">
-                  <span class="filter-item active" data-class="all">All</span>
-                  <span class="filter-item" data-class="web">Website</span>
-                  <span class="filter-item" data-class="apps">Android</span>
+                    <span class="filter-item active" data-class="all">All</span>
+                    <span class="filter-item" data-class="web">Website</span>
+                    <span class="filter-item" data-class="apps">Android</span>
                 </div>
             </div>
-
             <div class="image-gallery">
                 <div class="image-box" data-class="web">
                     <img src="img/coway.png" alt="img.jpg" />
@@ -434,6 +391,7 @@
             </div>
         </div>
     </section>
+
     <!-- page loader -->
     <div id="spinner">
         <div class="spinner-border text-white" role="status">
@@ -441,6 +399,7 @@
         </div>
     </div>
     <!-- end of page loader -->
+
     <!-- footer -->
     <div class="footer">
         <div class="row">
@@ -455,31 +414,30 @@
     </div>
     </footer>
     <!-- end of footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
         const listItems = document.querySelectorAll('.filter-item');
         const allimages = document.querySelectorAll('.image-box');
-        
-        function toggleActiveClass(active){
+
+        function toggleActiveClass(active) {
             listItems.forEach(item => {
-            item.classList.remove('active');
+                item.classList.remove('active');
             })
             active.classList.add('active');
         }
-        
-        function toggleimages(dataClass){
-            if(dataClass === 'all'){
-                for(let i = 0; i<allimages.length; i++){
+
+        function toggleimages(dataClass) {
+            if (dataClass === 'all') {
+                for (let i = 0; i < allimages.length; i++) {
                     allimages[i].style.display = 'block';
                 }
-            }else{
-                for(let i = 0; i<allimages.length; i++)
-                    allimages[i].dataset.class === dataClass ? allimages[i].style.display = 'block' : allimages[i].style.display = 'none';
+            } else {
+                for (let i = 0; i < allimages.length; i++) allimages[i].dataset.class === dataClass ? allimages[i].style.display = 'block' : allimages[i].style.display = 'none';
             }
         }
-        
-        for(let i = 0; i < listItems.length; i++){
-            listItems[i].addEventListener('click', function(){
+        for (let i = 0; i < listItems.length; i++) {
+            listItems[i].addEventListener('click', function() {
                 toggleActiveClass(listItems[i]);
                 toggleimages(listItems[i].dataset.class);
             });
@@ -552,6 +510,9 @@
             backSpeed: 60,
             loop: true
         });
+    </script>
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
     </script>
 </body>
 
