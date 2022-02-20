@@ -458,6 +458,58 @@ nav.sticky {
     color: white;
 }
 
+/*Sticky Bottom Icon*/
+.icon-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+    z-index: 15;
+  }
+  
+.icon-bar a {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 7px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 26px;
+}
+
+.icon-bar .ws a{
+    background-color: rgb(45, 202, 45);
+}
+.icon-bar .ca a{
+    background-color: rgb(252, 168, 107);
+}
+.icon-bar .ma a{
+    background-color: rgb(223, 122, 122);
+}
+  
+.icon-bar .ws a:hover {
+    background-color: green;
+}
+.icon-bar .ca a:hover {
+    background-color: chocolate;
+}
+.icon-bar .ma a:hover {
+    background-color: rgb(180, 58, 58);
+}
+
+.icon-bar {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .sbuttons {
+        display: none;
+    }
+    .icon-bar {
+        display: inline-block;
+    }
+}
+
 /*End of Floating Icon*/
 #contactHeader-2 {
     padding-top: 140px !important;
@@ -627,7 +679,7 @@ iframe.map {
 
 .timeline>li .timeline-image {
     position: absolute;
-    z-index: 100;
+    z-index: 13;
     left: 0;
     width: 80px;
     height: 80px;

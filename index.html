@@ -25,6 +25,14 @@
         <a target="_blank" class="sbutton mainsbutton" tooltip="Chat"><i class='bx bx-message-dots'></i></a>
     </div>
     <!--End Floating Button-->
+
+    <!-- Icons for the sticky Social Bar -->
+    <div class="icon-bar">
+        <div class="ws"><a href="https://api.whatsapp.com/send?phone=60197957166"><i class='bx bxl-whatsapp'></i></a></div>
+        <div class="ca"><a href="tel:+60197957166"><i class='bx bx-phone-call'></i></a></div> 
+        <div class="ma"><a href="mailto:danialamin100@gmail.com"><i class='bx bx-mail-send'></i></a></div>
+    </div>
+    <!--End Icons for the sticky Social Bar-->
     
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-4 max-vw-100" aria-label="Fourth navbar example">
@@ -495,15 +503,6 @@
         });
     </script>
     <script>
-        $(document).ready(function() {
-            $('.chat-icon').click(function() {
-                $(this).toggleClass('active');
-                $(this).toggleClass('btnblinkanim');
-                $('.main-chat-box').toggle();
-            });
-        });
-    </script>
-    <script>
         var typed = new Typed(".typing-2", {
             strings: ["Fresh Graduate", "Android Developer", "Information System Engineer"],
             typeSpeed: 100,
@@ -513,6 +512,15 @@
     </script>
     <script>
         document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.chat-icon').click(function(){
+                $(this).toggleClass('active');
+                $(this).toggleClass('btnblinkanim');
+                $('.main-chat-box').toggle();
+            });
+        });
     </script>
 </body>
 
