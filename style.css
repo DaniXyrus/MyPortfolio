@@ -465,26 +465,17 @@ nav.sticky {
     width: 100%;
     overflow: auto;
     z-index: 15;
+    background: #034180;
   }
   
 .icon-bar a {
     float: left;
     width: 33.3%;
     text-align: center;
-    padding: 7px 0;
+    padding: 3px 0;
     transition: all 0.3s ease;
     color: white;
     font-size: 26px;
-}
-
-.icon-bar .ws a{
-    background-color: rgb(45, 202, 45);
-}
-.icon-bar .ca a{
-    background-color: rgb(252, 168, 107);
-}
-.icon-bar .ma a{
-    background-color: rgb(223, 122, 122);
 }
   
 .icon-bar .ws a:hover {
