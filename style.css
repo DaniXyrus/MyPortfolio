@@ -90,16 +90,19 @@ html {
 }
 
 nav {
-    transition: 0.6s;
-    background-color: rgba(0, 0, 0, 0.4) !important;
-    ;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(84, 132, 204, 0.2);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(30%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
 }
 
 nav.sticky {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-    padding: 1rem !important;
-    background-color: rgba(0, 0, 0, 1) !important;
-    ;
+    transition: all 0.5s ease-in-out;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(30%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
 }
 
 .reveal {
@@ -198,11 +201,6 @@ nav.sticky {
 }
 
 @media (max-width: 768px) {
-    nav {
-        background-color: rgba(0, 0, 0, 0.95) !important;
-        ;
-    }
-
     .animate {
         animation-duration: 0.3s;
         -webkit-animation-duration: 0.3s;
