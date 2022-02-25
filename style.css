@@ -105,6 +105,93 @@ nav.sticky {
     -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
 }
 
+@media (max-width: 991px) {
+    #navbarsExample04 {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 991px) {
+    nav {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.7%;
+        width: 94%;
+        border-radius: 50px;
+    }
+}
+
+.animated-icon1 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 6px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.animated-icon1 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.animated-icon1 span {
+    background: white;
+}
+
+.animated-icon1 span:nth-child(1) {
+    top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+    top: 10px;
+}
+
+.animated-icon1 span:nth-child(3) {
+    top: 20px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+    top: 11px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
 .reveal {
     position: relative;
     transform: translateY(75px);
@@ -464,8 +551,8 @@ nav.sticky {
     overflow: auto;
     z-index: 15;
     background: #034180;
-  }
-  
+}
+
 .icon-bar a {
     float: left;
     width: 33.3%;
@@ -475,13 +562,15 @@ nav.sticky {
     color: white;
     font-size: 26px;
 }
-  
+
 .icon-bar .ws a:hover {
     background-color: green;
 }
+
 .icon-bar .ca a:hover {
     background-color: chocolate;
 }
+
 .icon-bar .ma a:hover {
     background-color: rgb(180, 58, 58);
 }
@@ -494,6 +583,7 @@ nav.sticky {
     .sbuttons {
         display: none;
     }
+
     .icon-bar {
         display: inline-block;
     }
@@ -677,7 +767,7 @@ iframe.map {
     color: white;
     border: 6px solid #034180;
     border-radius: 100%;
-    background-color: #ffc800;
+    background-color: #034180;
 }
 
 .timeline>li .timeline-image h4,
@@ -1272,12 +1362,14 @@ section .title::after {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #fafafaf2;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.425);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: all 0.5s ease;
     z-index: 1;
 }
 
@@ -1323,7 +1415,6 @@ section .title::after {
     padding: 0 5px;
     transform: translateX(-50%);
 }
-
 
 .image-gallery .image-box .details .category {
     font-size: 13px;
